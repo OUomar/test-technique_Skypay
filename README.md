@@ -16,6 +16,7 @@ public interface AccountService {
     void withdraw(int amount);
     void printStatement();
 }
+```
 ## Exigences du test d'acceptation
 
 Scénario :
@@ -24,11 +25,20 @@ Scénario :
 - Retrait de 500 le 14-01-2012
 - Affichage du relevé bancaire
 
+## Résultat attendu :
+
+```
+Date       || Montant || Solde
+10/01/2012 || 1000    || 1000
+13/01/2012 || 2000    || 3000
+14/01/2012 || -500    || 2500
+```
 ## Technologies utilisées
 
 - Java
 - JUnit (pour les tests)
 
 ## Exécution du projet
-Pour exécuter le projet, compilez et lancez la classe AccountTest.
+
+Pour exécuter le projet, compilez et lancez la classe ``` AccountTest ```.
 
